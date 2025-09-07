@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "ProJSponJob backend is running!"}
+    return {"message": "ProJSponJob is running!"}
