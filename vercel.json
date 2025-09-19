@@ -1,1 +1,23 @@
-{ "version": 2, "builds": [ { "src": "package.json", "use": "@vercel/static-build" } ], "env": { "REACT_APP_API_URL": "https://projsponjob-backend.onrender.com", "REACT_APP_ADMIN_SECRET": "admin_dev_secret" }, "routes": [ { "src": "/admin", "dest": "/index.html" }, { "src": "/(.*)", "dest": "/index.html" } ] }
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "env": {
+    "REACT_APP_API_URL": "https://projsponjob-backend.onrender.com",
+    "REACT_APP_ADMIN_SECRET": "admin_dev_secret"
+  },
+  "routes": [
+    {
+      "src": "/admin",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
